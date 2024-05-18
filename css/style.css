@@ -2425,21 +2425,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('/Aset/Screenshot\ 2024-03-27\ 125747.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: slideBg 5s forwards; /* Durasi animasi 5 detik */
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('/Aset/Screenshot\ 2024-03-27\ 125804.png'); /* Ganti 'background.jpg' dengan nama file gambar latar belakang Anda */
+    background-image: url('/aset/Screenshot\ 2024-03-27\ 125804.png'); /* Ganti 'background.jpg' dengan nama file gambar latar belakang Anda */
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -2556,7 +2542,7 @@ body {
   }
 
 
-        .wave {
+        .wave1 {
             position: absolute;
             bottom: 0;
             left: 0;
