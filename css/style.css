@@ -2410,3 +2410,219 @@ body, html {
     background-image: url('../aset/bgDragon.png');
 }
 
+/* character */
+
+@keyframes slideBg {
+    0% {
+        background-position-y: 0;
+    }
+    100% {
+        background-position-y: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/Aset/Screenshot\ 2024-03-27\ 125747.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideBg 5s forwards; /* Durasi animasi 5 detik */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/Aset/Screenshot\ 2024-03-27\ 125804.png'); /* Ganti 'background.jpg' dengan nama file gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideBg 5s linear infinite; /* Animasi latar belakang */
+  }
+
+  .transparent-button {
+    background: transparent;
+    border: none; /* Menghilangkan border */
+    color: white;
+    padding: 15vw 15vw; /* Gunakan viewport units untuk ukuran tombol responsif */
+    font-size: 2vw; /* Gunakan viewport units untuk ukuran font responsif */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 8vw;
+    transition: all 0.3s ease;
+  }
+
+  .transparent-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .next-page-button {
+  position: fixed;
+  top: 35vw; /* Sesuaikan jarak dari bawah */
+  right: 5vw; /* Sesuaikan jarak dari kanan */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 12vw; /* Gunakan viewport units untuk ukuran tombol responsif */
+  height: auto;
+}
+
+
+  @media only screen and (max-width: 768px) {
+    .transparent-button {
+      font-size: 4vw; /* Atur ukuran font menjadi lebih besar pada layar yang lebih kecil */
+    }
+
+    .next-page-button {
+      width: 15vw; /* Atur ukuran tombol lebih besar pada layar yang lebih kecil */
+      bottom: 2vw;
+      right: 3vw; /* Menggeser tombol ke kiri pada layar yang lebih kecil */
+    }
+  }
+
+  /* Header Styles */
+#header {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    padding: 0 20px;
+    overflow-x: auto; /* Mengaktifkan scroll horizontal pada header */
+}
+
+/* Footer Styles */
+/* Footer Styles */
+/* Footer Styles */
+.footer {
+    position: fixed;
+    width: 100vw; /* Mengatur lebar menjadi 100% dari lebar viewport */
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 85px; /* Sesuaikan ketinggian footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: auto; /* Mengaktifkan scroll horizontal pada footer jika konten melebihi lebar viewport */
+    padding: 0; /* Menghapus padding yang sebelumnya ada */
+    white-space: nowrap;
+  }
+
+  #header img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  #header nav {
+    display: flex;
+    align-items: center;
+  }
+
+  #header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s;
+  }
+
+  #header nav a:hover {
+    transform: scale(1.1);
+  }
+
+  #header nav a img {
+    margin-right: 5px;
+  }
+
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("/Aset/Screenshot_2024-03-22_101608-removebg-preview.png");
+            background-size: 1000px 100px;
+            animation: animateWaves 4s linear infinite;
+            transform-origin: bottom;
+            z-index: 0; /* Set z-index to be behind footer */
+        }
+
+        @keyframes animateWaves {
+            0% {
+                background-position-x: 0;
+            }
+            100% {
+                background-position-x: 1000px;
+            }
+        }
+
+        .footer p {
+            color: #fff;
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1;
+        }
+
+        .social-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        .social-icon__link img {
+            width: 20px;
+            height: auto;
+            margin-right: 5px;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin: 5px 0; /* Adjust margin */
+        }
+
+        .contact-info p {
+            color: #fff;
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1;
+            margin-right: 20px; /* Adjust margin */
+        }
+
+        /* New CSS for button hover effect */
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin: 0 5px;
+        }
+
+        .footer-links a:hover {
+            transform: scale(1.1); /* Make button bigger on hover */
+            color: lightblue; /* Change text color on hover */
+        }
