@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .regis-wrapper{
+            background: url('/Aset/registerr.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .regis-wrapper .regis-content{
+            width: 100%;
+            height: 50vw;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        #content {
+            margin-top: 35%;
+            margin-left: 25%;
+            color: white;
+            text-align: center;
+        }
+        .login-form {
+            background-color: rgba(0, 0, 0, 0.16);
+            padding: 1%;
+            border-radius: 15px;
+            display: inline-block;
+            animation: shining 2s infinite alternate;
+        }
+        @keyframes shining {
+            0% {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 40px rgba(255, 255, 255, 0.9);
+            }
+        }
+        input[type="text"], input[type="email"], input[type="password"], select {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            border: none;
+            width: 185px;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Register Form -->
+    <div class="regis-wrapper">
+        <div class="regis-content"></div>
+        <div class="regis-content">
+            <div id="content">
+                <form class="login-form" onsubmit="return validateForm()" action="videoOpening.html">
+                    <input type="text" id="firstName" placeholder="First Name"><br>
+                    <input type="text" id="lastName" placeholder="Last Name"><br>
+                    <select id="gender">
+                        <option value="" disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                    <input type="text" id="address" placeholder="Address"><br>
+                    <input type="email" id="email" placeholder="Email Address"><br>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+        <div class="regis-content"></div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var gender = document.getElementById('gender').value;
+            var address = document.getElementById('address').value;
+            var email = document.getElementById('email').value;
+
+            if (firstName === '' || lastName === '' || gender === '' || address === '' || email === '') {
+                alert('Semua kolom harus diisi.');
+                return false;
+            }
+
+            if (!validateEmail(email)) {
+                alert('Email tidak valid.');
+                return false;
+            }
+
+            return true;
+        }
+
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+    </script>
+</body>
+</html>
