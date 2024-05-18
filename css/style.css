@@ -2405,3 +2405,7 @@ body, html {
     background-size: cover;
     border: none;
 }
+
+.background_char {
+    background-image: url('../aset/bgDragon.png');
+}
