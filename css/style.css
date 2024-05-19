@@ -1,4 +1,4 @@
-/* Class */
+Class
 
 body {
     background-color: rgb(255, 199, 208);
@@ -2418,7 +2418,7 @@ body, html {
     }
     100% {
         background-position-y: 100%;
-    }
+    }   
 }
 
 body {
