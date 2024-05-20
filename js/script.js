@@ -22,3 +22,17 @@ function validateEmail(email) {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
+
+var dropdownState = 0;
+
+function dropdown(){
+    var dropdownList = document.getElementById("dropdown-menu");
+
+    if(dropdownState == 1){
+        dropdownList.style.display = "block";
+        dropdownState = 0;
+    }else{
+        dropdownList.style.display = "none";
+        dropdownState = 1;
+    }
+}
