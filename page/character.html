@@ -5,24 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Home Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/character.css">
+    <script src="../js/script.js"></script>
 </head>
 <body>
     <div class="background_char"></div>
 
-    <div id="header">
-        <img src="/Aset/logo.png" alt="Logo">
-        <nav>
-            <a href="/index.html"><img src="/aset/homePageLogo.png" alt="Home">Home</a>
-            <a href="/page/character.html"><img src="/aset/dragonLogo.png" alt="Dragons">Dragons</a>
-            <a href="/page/class.html"><img src="/aset/dragonEggLogo.png" alt="Class">Class</a>
-            <a href="/page/isle.html"><img src="/aset/islandLogo.png" alt="Isle Berk's">Isle Berk's</a>
-            <a href="/page/register.html"><img src="/aset/aboutUsLogo.png" alt="Register">Register</a>
-        </nav>
-    </div>
+    <nav class="navbar">
+        <img src="../aset/logo.png" alt="" class="nav-icon">
+        <div class="nav-link">
+            <a href="../index.html" class="nav-link-a">
+                <img src="../aset/homePageLogo.png" alt="">
+                <p> Home</p>
+            </a>
+            <a href="./character.html" class="nav-link-a">
+                <img src="../aset/dragonLogo.png" alt="">
+                <p> Dragon</p>
+            </a>
+            <a href="./class.html" class="nav-link-a">
+                <img src="../aset/dragonEggLogo.png" alt="">
+                <p> Class</p>
+            </a>
+            <a href="./isle.html" class="nav-link-a">
+                <img src="../aset/islandLogo.png" alt="">
+                <p> Island</p>
+            </a>
+            <a href="./aboutUs.html" class="nav-link-a">
+                <img src="../aset/aboutUsLogo.png" alt="">
+                <p> About</p>
+            </a>
+        </div>
 
-    <a href="dragon1.html" class="transparent-button"></a>
-    <a href="dragonPageDown1.html"><img src="/Aset/bawah.png" alt="Next Page" class="next-page-button"></a>
+        <img onclick="dropdown()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/32px-Hamburger_icon_white.svg.png" class="nav-dropdown">
+        
+        <div class="dropdown-menu" id="dropdown-menu">
+            <a href="../index.html" class="nav-link-a">
+                <img src="../aset/homePageLogo.png" alt="">
+                <p> Home</p>
+            </a>
+            <a href="./character.html" class="nav-link-a">
+                <img src="../aset/dragonLogo.png" alt="">
+                <p> Dragon</p>
+            </a>
+            <a href="./class.html" class="nav-link-a">
+                <img src="../aset/dragonEggLogo.png" alt="">
+                <p> Class</p>
+            </a>
+            <a href="./isle.html" class="nav-link-a">
+                <img src="../aset/islandLogo.png" alt="">
+                <p> Island</p>
+            </a>
+            <a href="./aboutUs.html" class="nav-link-a">
+                <img src="../aset/aboutUsLogo.png" alt="">
+                <p> About</p>
+            </a>
+        </div>
+    </nav>
+
+    <!-- <a href="dragon1.html" class="transparent-button"></a>
+    <a href="dragonPageDown1.html"><img src="../Aset/bawah.png" alt="Next Page" class="next-page-button"></a> -->
+    <div class="char-slide">
+        <div class="char-slide-curr" id="char-slide-curr">
+            <div class="char-slide-child">
+                <img src="../aset/Screenshot 2024-03-27 125747.png" alt="">
+            </div>
+            <div class="char-slide-child">
+                <img src="../aset/Screenshot 2024-03-27 125804.png" alt="">
+            </div>
+            <div class="char-slide-child">
+                <img src="../aset/Screenshot 2024-03-27 125827.png" alt="">
+            </div>
+            <div class="char-slide-child">
+                <img src="../aset/Screenshot 2024-03-27 125841.png" alt="">
+            </div>
+            <div class="char-slide-child">
+                <img src="../aset/Screenshot 2024-03-27 125858.png" alt="">
+            </div>
+            <div class="char-slide-child">
+                <img src="../aset/Screenshot 2024-03-27 125912.png" alt="">
+            </div>
+        </div>
+
+        <!-- <button class="prev-char"></button> -->
+        <button class="next-char" onclick="toggleSlide(-70)"><img src="../aset/bawah.png" alt=""></button>
+    </div>
         
     <div class="footer">
         <div class="wave1" id="wave1"></div>

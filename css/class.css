@@ -134,7 +134,7 @@ body {
     display: flex;
     align-items: center;
     color: white;
-    text-decoration: none;
+    text-decoration-line: none;
 }
 
 .nav-link .nav-link-a img{
@@ -1235,7 +1235,7 @@ body {
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
-}
+    }
     
     /* Styles for each egg */
     .char {
@@ -2210,5 +2210,9 @@ body {
         display: flex;
         top: 70%;
         left: 30%;
+    }
+
+    .dropdown-menu .nav-link-a{
+        text-decoration-line: none;
     }
 }

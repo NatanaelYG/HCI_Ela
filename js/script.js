@@ -36,3 +36,17 @@ function dropdown(){
         dropdownState = 1;
     }
 }
+
+var pos_char = 0;
+
+function toggleSlide(num){
+    console.log(pos_char);
+    var curr_char = document.getElementById("char-slide-curr");
+
+    if(pos_char == -350){
+        console.log("Max");
+    }else{
+        pos_char += num;
+        curr_char.style.marginTop = "calc((-200px) + "+pos_char+"%"+")";
+    }
+}
