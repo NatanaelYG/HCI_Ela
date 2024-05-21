@@ -133,7 +133,7 @@ body {
     display: flex;
     align-items: center;
     color: white;
-    text-decoration: none;
+    text-decoration-line: none;
 }
 
 .nav-link .nav-link-a img{
@@ -784,5 +784,9 @@ body {
         display: block;
         position: absolute;
         right: 50px;
+    }
+
+    .dropdown-menu .nav-link-a{
+        text-decoration-line: none;
     }
 }
