@@ -38,15 +38,16 @@ function dropdown(){
 }
 
 var pos_char = 0;
+var i = 0;
 
 function toggleSlide(num){
     console.log(pos_char);
     var curr_char = document.getElementById("char-slide-curr");
 
-    if(pos_char == -350){
+    if(pos_char == -4285){
         console.log("Max");
     }else{
         pos_char += num;
-        curr_char.style.marginTop = "calc((-200px) + "+pos_char+"%"+")";
+        curr_char.style.marginTop = pos_char+"px";
     }
 }
