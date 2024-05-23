@@ -199,6 +199,7 @@
 
 .content .content-header img{
     height: 100%;
+    margin-top: 30%;
 }
 
 .content .content-body{
@@ -279,6 +280,7 @@
 }
 
 .char .char-header img{
+    margin-top: 20%;
     height: 100%;
 }
 
