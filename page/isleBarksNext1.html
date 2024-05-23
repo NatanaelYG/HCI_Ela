@@ -8,16 +8,60 @@
     <link rel="stylesheet" href="../css/isleBarksNext1.css">
 </head>
 <body>
-    <div id="header">
-        <img src="../aset/logo.png" alt="Logo">
-        <nav>
-            <a href="../index.html"><img src="../aset/homePageLogo.png" alt="Home"> <span style="margin-top: -2px;">Home</span></a>
-            <a href="./character.html"><img src="../aset/dragonLogo.png" alt="Character"> <span style="margin-top: -2px;">Character</span></a>
-            <a href="./class.html"><img src="../aset/dragonEggLogo.png" alt="Class"> <span style="margin-top: -2px;">Class</span></a>
-            <a href="#"><img src="../aset/islandLogo.png" alt="Isle Berk's"> <span style="margin-top: -2px;">Isle Berk's</span></a>
-            <a href="./register.html"><img src="../aset/aboutUsLogo.png" alt="Register"> <span style="margin-top: -2px;">Register</span></a>
-        </nav>
-    </div>
+    <nav class="navbar">
+        <img src="../aset/logo.png" alt="" class="nav-icon" />
+        <div class="nav-link">
+          <a href="../index.html" class="nav-link-a">
+            <img src="../aset/homePageLogo.png" alt="" />
+            <p>Home</p>
+          </a>
+          <a href="./character.html" class="nav-link-a">
+            <img src="../aset/dragonLogo.png" alt="" />
+            <p>Dragon</p>
+          </a>
+          <a href="./class.html" class="nav-link-a">
+            <img src="../aset/dragonEggLogo.png" alt="" />
+            <p>Class</p>
+          </a>
+          <a href="./isleOfBerks.html" class="nav-link-a">
+            <img src="../aset/islandLogo.png" alt="" />
+            <p>Island</p>
+          </a>
+          <a href="./Register.html" class="nav-link-a">
+            <img src="../aset/aboutUsLogo.png" alt="" />
+            <p>Register</p>
+          </a>
+        </div>
+  
+        <img
+          onclick="dropdown()"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/32px-Hamburger_icon_white.svg.png"
+          class="nav-dropdown"
+        />
+  
+        <div class="dropdown-menu" id="dropdown-menu">
+          <a href="../index.html" class="nav-link-a">
+            <img src="../aset/homePageLogo.png" alt="" />
+            <p>Home</p>
+          </a>
+          <a href="./character.html" class="nav-link-a">
+            <img src="../aset/dragonLogo.png" alt="" />
+            <p>Dragon</p>
+          </a>
+          <a href="./class.html" class="nav-link-a">
+            <img src="../aset/dragonEggLogo.png" alt="" />
+            <p>Class</p>
+          </a>
+          <a href="./isleOfBerks.html" class="nav-link-a">
+            <img src="../aset/islandLogo.png" alt="" />
+            <p>Island</p>
+          </a>
+          <a href="./register.html" class="nav-link-a">
+            <img src="../aset/aboutUsLogo.png" alt="" />
+            <p>Register</p>
+          </a>
+        </div>
+      </nav>
 
     <div class="content">
         <div class="photo-container" data-reveal="1">
