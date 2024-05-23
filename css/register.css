@@ -8,7 +8,7 @@ body {
 }
 
 .regis-wrapper{
-    background: url('/Aset/registerr.png');
+    background: url('../aset/registerr.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
