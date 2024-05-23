@@ -112,6 +112,7 @@ body {
     color: white;
     margin-bottom: 20px;
     font-size: 15px;
+    text-align: center;
 }
 
 .footer .copyrights p span{
@@ -197,9 +198,10 @@ body {
 .actor {
     position: absolute;
     display: flex;
-    margin-left: -6%;
-    height: 90%;
+    margin-left: -5%;
+    height: 70%;
     margin-top: 5.7%;
+    bottom: 0;
 }
 
 .judul {
@@ -208,7 +210,7 @@ body {
     height: 60%;
     top: 10%;
     z-index: 98;
-    left: 30%;
+    left: 37%;
 }
 
 .judul img{
@@ -236,7 +238,7 @@ body {
     font-weight: bold;
     text-align: center;
     top: 60%;
-    left: 61%;
+    left: 62%;
 }
 
 /* Responsive for screens 820px and below */
@@ -254,12 +256,14 @@ body {
     }
 
     .footer .copyrights{
+        text-align: center;
         width: 100%;
     }
 
     .footer .social{
         width: 100%;
         justify-content: center;
+        margin-left: -3%;
     }
 
     /* End footer */
@@ -397,5 +401,9 @@ body {
         z-index: 1;
         margin-top: 5.7%;
         bottom: 0;
+    }
+
+    .footer .social{
+        margin-left: -6%;
     }
 }
