@@ -51,3 +51,39 @@ function toggleSlide(num){
         curr_char.style.marginTop = pos_char+"px";
     }
 }
+
+document.querySelectorAll('.photo-container img').forEach(photo => {
+    photo.addEventListener('click', function() {
+        this.classList.remove('shake');
+        this.style.filter = 'blur(0)';
+        this.nextElementSibling.style.display = 'flex';
+    });
+});
+
+var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '   100%',
+                width: '100%',
+                videoId: 'U9DIsxT3cfY', 
+                playerVars: {
+                    'autoplay': 1,
+                    'loop': 0, 
+                    'controls': 0, 
+                },
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.ENDED) {
+                window.location.href = 'isleBarksNext1.html';
+            }
+        }
