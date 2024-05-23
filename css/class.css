@@ -1211,6 +1211,29 @@
         margin-top: 19%;
     }
 
+    /* Footer styles */
+
+    .footer{
+        display: block;
+        /* margin-bottom: -10px; */
+    }
+
+    .footer .title{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer .copyrights{
+        width: 100%;
+    }
+
+    .footer .social{
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* End footer */
+
     .background-image {
         background-size: contain;
         width: 100%;
