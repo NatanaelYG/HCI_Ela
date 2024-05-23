@@ -119,6 +119,7 @@
     color: white;
     margin-bottom: 20px;
     font-size: 15px;
+    text-align: center;
 }
 
 .footer .copyrights p span{
@@ -255,6 +256,8 @@
 
 .content .btn-back img{
     width: 100%;
+    margin-bottom: 20%;
+    z-index: 999;
 }
 
 .char{
@@ -361,11 +364,13 @@
 
     .footer .copyrights{
         width: 100%;
+        text-align: center;
     }
 
     .footer .social{
         width: 100%;
         justify-content: center;
+        margin-left: -3%;
     }
 
     /* End footer */
@@ -392,5 +397,9 @@
 
     .char{
         background-size: contain;
+    }
+
+    .content .btn-back {
+        margin-bottom: 20%;
     }
 }
