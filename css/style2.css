@@ -198,7 +198,6 @@
 }
 
 .content .content-header img{
-    margin-top: 15%;
     height: 100%;
 }
 
@@ -239,9 +238,27 @@
 }
 
 .content-body .detail .desc{
+    margin-top: 20px;
     font-weight: bold;
     font-size: 16px;
     text-align: center;
+}
+
+.content .btn-back{
+    min-width: 80px;
+    max-width: 100px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 70px;
+    right: 50px;
+}
+
+.content .btn-back img{
+    width: 100%;
 }
 
 .char{
@@ -314,6 +331,7 @@
     .content .content-body{
         display: block;
         margin-bottom: 100px;
+        padding: 0 50px;
     }
 
     .content-body .image{
@@ -323,6 +341,11 @@
     
     .content-body .detail{
         width: 100%;
+    }
+
+    .content .btn-back{
+        min-width: 50px;
+        max-width: 60px;
     }
 
     .char{
