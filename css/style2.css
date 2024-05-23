@@ -199,7 +199,7 @@
 
 .content .content-header img{
     height: 100%;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 .content .content-body{
@@ -255,7 +255,7 @@
     align-items: center;
     position: fixed;
     bottom: 70px;
-    right: 50px;
+    left: 20px;
 }
 
 .content .btn-back img{
