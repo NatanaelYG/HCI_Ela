@@ -5,64 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Home Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
-    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="source/judul.png" type="image/x-icon" />
+    <script src="descHomepage.js" defer></script>
 </head>
 <body>
-    <div class="background-image">
-        <img src="../Aset/homePageBackground (2).png" alt="Background">
+    <div class="bg_Homepage">
+        <img src="/Asset Homepage/bgHomepage.png" alt="Background">
+    </div>
         
-        <div id="header">
-            <img class="logo" src="../Aset/logo.png" alt="Logo">
-            <nav>
-                <a href="index.html">
-                    <img src="../Aset/homePageLogo.png" alt="Home">
-                    <span>Home</span>
+        <nav class="navbar">
+            <img src="logo.png" alt="Logo" class="nav-icon">
+            <div class="nav-link">
+                <a href="../index.html" class="nav-link-a">
+                    <img src="homePageLogo.png" alt="">
+                    <p>Home</p>
                 </a>
-                <a href="./page/character.html">
-                    <img src="../Aset/dragonLogo.png" alt="Dragons">
-                    <span>Character</span>
+                <a href="./character.html" class="nav-link-a">
+                    <img src="dragonLogo.png" alt="">
+                    <p>Dragon</p>
                 </a>
-                <a href="./page/class.html">
-                    <img src="../Aset/dragonEggLogo.png" alt="Class">
-                    <span>Class</span>
+                <a href="./class.html" class="nav-link-a">
+                    <img src="dragonEggLogo.png" alt="">
+                    <p>Class</p>
                 </a>
-                <a href="./page/isle.html">
-                    <img src="../Aset/islandLogo.png" alt="Islands">
-                    <span>Islands</span>
+                <a href="./isle.html" class="nav-link-a">
+                    <img src="islandLogo.png" alt="">
+                    <p>Island</p>
                 </a>
-                <a href="./page/register.html">
-                    <img src="../Aset/aboutUsLogo.png" alt="Register">
-                    <span>Register</span>
+                <a href="./aboutUs.html" class="nav-link-a">
+                    <img src="aboutUsLogo.png" alt="">
+                    <p>About</p>
                 </a>
-            </nav>
+            </div>
+
+            <img onclick="dropdown()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/32px-Hamburger_icon_white.svg.png" class="nav-dropdown">
+
+            <div class="dropdown-menu" id="dropdown-menu">
+                <a href="../index.html" class="nav-link-a">
+                    <img src="homePageLogo.png" alt="">
+                    <p>Home</p>
+                </a>
+                <a href="./character.html" class="nav-link-a">
+                    <img src="dragonLogo.png" alt="">
+                    <p>Dragon</p>
+                </a>
+                <a href="./class.html" class="nav-link-a">
+                    <img src="dragonEggLogo.png" alt="">
+                    <p>Class</p>
+                </a>
+                <a href="./isle.html" class="nav-link-a">
+                    <img src="islandLogo.png" alt="">
+                    <p>Island</p>
+                </a>
+                <a href="./aboutUs.html" class="nav-link-a">
+                    <img src="aboutUsLogo.png" alt="">
+                    <p>About</p>
+                </a>
+            </div>
+        </nav>
+
+        <div class="content-char">
+            
+            <div class="actor-wrapper">
+                <img class="actor" src="../Asset Homepage/orang.png" alt="Orang">
+            </div>
+            
+            <div class="detail">
+                
+                <div class="judul">
+                    <img src="../../Asset Homepage/judul.png" alt="Judul">
+                </div>
+                <div class="desc-wrapper">
+                    <p class="desc">We're excited to have you here. At Zendragon Academy, we believe education unlocks the future, we're committed to providing innovative, inclusive, and meaningful learning experiences. Our experienced instructors and state of the art facilities create a supportive environment for skill and knowledge development.</p>
+                </div>
+                <div class="quotes-wrapper">
+                    <p class="quotes">Unleash the Fire Within!</p>
+                </div>
+            </div>
         </div>
 
         <div class="footer">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-            <div class="social-icon">
-                <a href="#" class="social-icon__link"><img src="../Aset/facebooklogo.png" alt="Facebook"></a>
-                <a href="#" class="social-icon__link"><img src="../Aset/instagram_PNG11.png" alt="Instagram"></a>
-                <a href="#" class="social-icon__link"><img src="../Aset/twitter-icone.png" alt="Twitter"></a>
-            </div>
-            <div class="contact-info">
-                <a href="https://www.instagram.com/danielavall_g/">
-                    <p>@danielavall_g</p>
-                </a>
-                <a href="https://www.instagram.com/_ivancs_/">
-                    <p>@ivancs</p>
-                </a>
-                <p>@zenDragonRoar</p>
-            </div>
-            <div class="footer-links">
-                <a href="#" >Terms of Service</a>
-                <span> | </span>
-                <a href="#">Privacy Policy</a>
-            </div>
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+  
+        <div class="title">
+          <img src="../aset/logoHeader.png" alt="">
         </div>
-        
+  
+        <div class="copyrights">
+          <p>&copy; 2024 All rights reserved. <span><a href="https://www.instagram.com/danielavall_g">@danielavall_g</a>  <a href="https://www.instagram.com/ivancs">@ivancs</a></span></p>        
+        </div>
+  
+        <div class="social">
+          <a href="#" class="social-icon"
+            ><img src="facebooklogo.png" alt="Facebook"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="instagram_PNG11.png" alt="Instagram"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="twitter-icone.png" alt="Twitter"
+          /></a>
+        </div>
     </div>
 </body>
 </html>
