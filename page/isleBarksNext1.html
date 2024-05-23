@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isle Berk's</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="/css/isleBarksNext1.css">
+</head>
+<body>
+    <div id="header">
+        <img src="/Aset/logo.png" alt="Logo">
+        <nav>
+            <a href="homePage.html"><img src="/Aset/homePageLogo.png" alt="Home"> <span style="margin-top: -2px;">Home</span></a>
+            <a href="dragonPage.html"><img src="/Aset/dragonLogo.png" alt="Character"> <span style="margin-top: -2px;">Character</span></a>
+            <a href="class.html"><img src="/Aset/dragonEggLogo.png" alt="Class"> <span style="margin-top: -2px;">Class</span></a>
+            <a href="isleOfBerks.html"><img src="/Aset/islandLogo.png" alt="Isle Berk's"> <span style="margin-top: -2px;">Isle Berk's</span></a>
+            <a href="zenDragon.html"><img src="/Aset/aboutUsLogo.png" alt="Register"> <span style="margin-top: -2px;">Register</span></a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="photo-container" data-reveal="1">
+            <img id="mainPhoto1" src="/Aset/GEN DRAGON (54).png" alt="Main Photo 1" class="shake">
+            <div class="photo-revealed">
+                <p>In the Viking world, egg dragons are mythical beings, embodying ancient gods' essence within their precious shells. These creatures, believed to possess unparalleled strength and wisdom, are revered as guardians of Viking heritage. Each egg holds the promise of a formidable ally, destined to shape the future of their kin.</p>
+            </div>
+        </div>
+
+        <div class="photo-container" data-reveal="2">
+            <img id="mainPhoto2" src="/Aset/GEN DRAGON (55).png" alt="Main Photo 2" class="shake">
+            <div class="photo-revealed">
+                <p>As newborns, baby dragons captivate with their innocence and curiosity, nurtured under the watchful eyes of their elders. Guided by ancient wisdom, they grow alongside their Viking companions, forging unbreakable bonds that will define their destinies.</p>
+            </div>
+        </div>
+    
+            <div class="photo-container" data-reveal="3">
+                <img id="mainPhoto3" src="/Aset/GEN DRAGON (53).png" alt="Main Photo 3" class="shake">
+                <div class="photo-revealed">
+                    <p>In Zen Academy's serene halls, a diverse cast seeks enlightenment. From novices to masters, each journey unfolds amidst the tranquility of the surroundings. Here, amidst the pursuit of inner harmony, characters are molded, destinies are forged, and greatness awaits those who dare to seek it.</p>
+                    <p> Join us on a journey that began with a dream and now soars across the Isle of Berk and Dragon Island, as we weave tales of camaraderie, discovery, and the majestic art of dragon mastery. Embrace the spirit of Zen dragoN, where every wingbeat resonates with the heartbeat of a legendary alliance.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="social-icon">
+                <a href="#" class="social-icon__link"><img src="/Aset/facebooklogo.png" alt="Facebook"></a>
+                <a href="#" class="social-icon__link"><img src="/Aset/instagram_PNG11.png" alt="Instagram"></a>
+                <a href="#" class="social-icon__link"><img src="/Aset/twitter-icone.png" alt="Twitter"></a>
+            </div>
+            <div class="contact-info">
+                <p>@daniellagunawan</p>
+                <p>@_ivancs_</p>
+                <p>@zenDragonRoar</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" style="color: white; text-decoration: none;">Terms of Service</a>
+                <span style="color: white;"> | </span>
+                <a href="#" style="color: white; text-decoration: none;">Privacy Policy</a>
+            </div>
+        </div>
+    
+        <img class="custom-image-button fade-in" src="/Aset/kanan.png" alt="Next Page" onclick="window.location.href='homePage.html'">
+    
+        <script>
+            document.querySelectorAll('.photo-container img').forEach(photo => {
+                photo.addEventListener('click', function() {
+                    this.classList.remove('shake');
+                    this.style.filter = 'blur(0)';
+                    this.nextElementSibling.style.display = 'flex';
+                });
+            });
+        </script>
+    </body>
+    </html>
+    
