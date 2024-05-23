@@ -12,14 +12,20 @@
 }
 
 .background-image {
-    background-size: contain;
     width: 100%;
     position: absolute;
     margin-left: -8px;
     margin-top: -8px;
 }
 
-.background-image img{
+.background-image .background-child{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.background-child img{
     width: 100%;
 }
 
