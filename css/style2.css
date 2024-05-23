@@ -302,8 +302,7 @@
 }
 
 .char-body .char-list .char-list-a:hover{
-    max-width: 31%;
-    min-width: 320px;
+    transform: scale(1.1);
 }
 
 .char-list .char-list-a img{
