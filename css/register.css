@@ -7,11 +7,11 @@ body, html {
             animation: fadeIn 1s ease-in-out;
         }
 
-        .regis-wrapper{
-            background: url('/Aset/registerr.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+.regis-wrapper{
+    background: url('../aset/registerr.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
         .regis-wrapper .regis-content{
             width: 100%;
